@@ -23,3 +23,14 @@ CASE WHEN MONTH(TO_TIMESTAMP({{x}})) IN (12, 1, 2)
     END
 
 {% endmacro %}
+
+-- FUNCTION TO GET GENDER 
+{% macro get_gender(x) %}
+
+CASE {{x}}
+    WHEN 1 THEN 'male'
+    WHEN 2 THEN 'female'
+    ELSE 'neutral'
+    END
+
+{% endmacro %}
