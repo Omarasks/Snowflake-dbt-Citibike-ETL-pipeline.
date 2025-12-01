@@ -1,6 +1,7 @@
 sources:
   - name: citi_analytics
     database: citi
+    schema: citi_schema
     tables:
       - name: citi_raw
       - name: weather_table
